@@ -5,6 +5,7 @@ const { createServer } = require("http");
 const app = express();
 
 const userRouter = require('./routers/userRouter');
+const subscriberRouter = require('./routers/subscriberRouter');
 const newsletterRouter = require('./routers/newsletterRouter');
 const cors = require('cors');
 
@@ -14,7 +15,8 @@ app.use(express.json());
 app.use(cors({ origin: ['http://localhost:3000'] }));
 
 app.use('/user', userRouter);
-app.use('/newuser', newsletterRouter);
+app.use('/newsubscriber', subscriberRouter);
+app.use('/newslettercontent', newsletterRouter);
 
 const port = 5000;
 

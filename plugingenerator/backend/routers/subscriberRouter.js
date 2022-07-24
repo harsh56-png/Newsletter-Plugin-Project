@@ -5,7 +5,7 @@ const { findOne } = require('../models/subscriberModel');
 const router = express.Router();
 
 // importing user model in this router
-const Model = require('../models/subscriberModel');
+const Model = require('../models/subscriberModel'); 
 
 router.post('/add', (req, res) => {
     console.log(req.body);
@@ -34,29 +34,6 @@ router.get('/getall', (req, res) => {
         });
 
 })
-
-router.get('/authenticate', (req, res) => {
-    const formadata = req.body;
-    Model.findOne({email: formadata.email, password: formadata.password})
-    .then((result) => {
-        console.log(result);
-
-        if(result) {
-            console.log('login success');
-            res.json(result);
-        }
-        else {
-            console.log('login failed');
-            res.status(400).json({message: 'login failed'});
-        }
-        
-})
-.catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
-});
-});
-
 
 
 module.exports = router;
