@@ -37,8 +37,8 @@ router.get('/getall', (req, res) => {
 })
 
 router.get('/authenticate', (req, res) => {
-    const formadata = req.body;
-    Model.findOne({email: formadata.email, password: formadata.password})
+    const formdata = req.body;
+    Model.findOne({email: formdata.email, password: formdata.password})
     .then((result) => {
         console.log(result);
 
@@ -52,6 +52,8 @@ router.get('/authenticate', (req, res) => {
         }
         
 })
+
+
 .catch((err) => {
     console.log(err);
     res.status(500).json(err);
