@@ -14,6 +14,29 @@
     min-width: auto;
 }
 
+.manualclass3{
+  background-color: transparent;
+  min-width: auto;
+}
+
+.manualclass4{
+  height: 30px;
+  margin-top: -30px;
+  transform: scale(2);
+  transform-origin: top center;
+  color: #fff;
+}
+
+.manualclass5{
+  background:  #FF0000;
+  backdrop-filter: blur(30px);
+  z-index: 1;
+}
+
+.manualclass6{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 @media (min-width: 992px) {
   .cascading-right {
