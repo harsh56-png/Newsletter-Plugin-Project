@@ -1,0 +1,26 @@
+.manualclass{
+    background-image: url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDl8fHdlYnNpdGVzfGVufDB8fHx8MTY1ODc1ODYzNg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080');
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
+
+.manualclass1{
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.manualclass2{
+    min-width: auto;
+}
+
+
+@media (min-width: 992px) {
+  .cascading-right {
+    margin-right: -50px;
+  }
+  .rotate-lg-6 {
+    transform: rotate(3deg);
+  }
+}
+
