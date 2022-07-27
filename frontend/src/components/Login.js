@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <div>
       <br />
-      <h2 classNameName="text-center">Sign In to your account</h2>
+      <h2 className="text-center">Sign In to your account</h2>
 
       <section className="vh-100">
         <div className="container-fluid h-custom">
@@ -128,7 +128,7 @@ const Login = () => {
                       </button>
                       <p className="small fw-bold mt-2 pt-1 mb-0">
                         Don't have an account?{" "}
-                        <a href="#!" className="link-danger">
+                        <a to='/signup' className="link-danger">
                           Register
                         </a>
                       </p>
