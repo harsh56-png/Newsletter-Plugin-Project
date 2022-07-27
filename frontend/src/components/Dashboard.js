@@ -61,10 +61,13 @@ const Dashboard = () => {
 
 
 
+
   return <div className='productlist bg-light'>
       <div className="container">
-      <h2>Owner ID : {currentUser._id}</h2>
-      <h4>To Use Plugin Copy the COde Below : </h4>
+      <h4 className='text-center' >Owner ID : {currentUser._id}</h4>
+      <br />
+      <h4 className='text-center' >To Use Plugin Copy the Code Below : </h4>
+
 
       <table className='table table-dark mt-5'>
         <thead>
