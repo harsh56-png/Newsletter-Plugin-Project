@@ -1,8 +1,10 @@
 import { Formik } from "formik";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Login = () => {
+  const navigate = useNavigate();
   const userSubmit = async (formdata) => {
     console.log(formdata);
 
@@ -21,6 +23,7 @@ const Login = () => {
         title: "Wellcome!!👌",
         text: "Enter a new World!!",
       });
+      navigate("/home");
       const data = await res.json();
       sessionStorage.setItem("user", JSON.stringify(data));
     } else {
@@ -114,7 +117,7 @@ const Login = () => {
 
                     <div className="text-center text-lg-start mt-4 pt-2">
                       <button
-                        
+                        type="submit"
                         className="btn btn-primary btn-lg"
                         style={{
                           paddingLeft: "2.5rem",
