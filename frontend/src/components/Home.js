@@ -1,4 +1,6 @@
+import { Button } from "@mui/material";
 import react from "react";
+
 import "./home.css";
 
 const Home = () => {
@@ -36,16 +38,17 @@ const Home = () => {
                             </h1>
                             <a
                               className="manualclass2 btn btn-outline-light btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 me-md-2"
-                              href="#!"
+                              href="/signup"
                               role="button"
                               aria-controls="#picker-editor"
                               draggable="false"
                             >
                               Register with us
                             </a>
+                          
                             <a
                               className="btn btn-primary btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 text-white manualclass3"
-                              href="#!"
+                              href="/login"
                               role="button"
                               aria-controls="#picker-editor"
                               draggable="false"

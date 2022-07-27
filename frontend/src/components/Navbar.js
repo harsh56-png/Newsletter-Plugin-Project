@@ -30,8 +30,13 @@ const Navbar = () => {
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <NavLink className="nav-link" to="/Home">
+              <NavLink className="nav-link" to="/home">
                 Home
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink className="nav-link" to="/dashboard">
+                Dashboard
               </NavLink>
             </li>
           </ul>
