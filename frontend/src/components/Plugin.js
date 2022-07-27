@@ -4,7 +4,8 @@ import React from "react";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
 
-const Plugin = () => {
+const Plugin = ({ownerKey}) => {
+  // console.log(ownerKey);
   const newsletterSubmit = async (formdata) => {
     console.log(formdata);
 
@@ -15,6 +16,8 @@ const Plugin = () => {
         "Content-Type": "application/json",
       },
     });
+
+    console.log(response.status);
   };
 
   const NewslettersignupSchema = Yup.object().shape({
@@ -31,6 +34,8 @@ const Plugin = () => {
             initialValues={{
               email: "",
               name: "",
+              owner: ownerKey,
+    createdAt : new Date()
             }}
             onSubmit={newsletterSubmit}
             validationSchema={NewslettersignupSchema}

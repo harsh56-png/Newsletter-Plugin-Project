@@ -7,6 +7,7 @@ const app = express();
 const userRouter = require('./routers/userRouter');
 const subscriberRouter = require('./routers/subscriberRouter');
 const newsletterRouter = require('./routers/newsletterRouter');
+const utilRouter = require('./routers/util');
 const cors = require('cors');
 
 // this is a middleware function
@@ -17,6 +18,7 @@ app.use(cors({ origin: ['http://localhost:3000'] }));
 app.use('/user', userRouter);
 app.use('/newsubscriber', subscriberRouter);
 app.use('/newslettercontent', newsletterRouter);
+app.use('/util', utilRouter);
 
 const port = 5000;
 

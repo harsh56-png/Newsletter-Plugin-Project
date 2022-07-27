@@ -13,9 +13,12 @@ root.render(
 );
 
 const plEle = document.getElementById('plugin');
+const key = plEle.getAttribute('ownerKey');
 if(plEle){
   ReactDOM.createRoot(plEle).render(
-    <Plugin/>
+    <React.StrictMode>
+    <Plugin ownerKey={key}/>
+    </React.StrictMode>
   )
 }
 

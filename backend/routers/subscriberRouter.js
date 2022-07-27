@@ -35,5 +35,17 @@ router.get('/getall', (req, res) => {
 
 })
 
+router.get('/getbyuser/:userid', (req, res) => {
+    Model.find({owner : req.params.userid})
+        .then((data) => {
+            res.json(data);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+            
+        });
+
+})
+
 
 module.exports = router;
