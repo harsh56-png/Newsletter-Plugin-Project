@@ -36,12 +36,11 @@ router.get('/getall', (req, res) => {
 
 })
 
-router.get('/authenticate', (req, res) => {
+router.post('/authenticate', (req, res) => {
     const formdata = req.body;
     Model.findOne({email: formdata.email, password: formdata.password})
     .then((result) => {
         console.log(result);
-
         if(result) {
             console.log('login success');
             res.json(result);
