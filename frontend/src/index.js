@@ -1,28 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Plugin from './components/Plugin';
+import React from "react"
+import ReactDOM from "react-dom/client"
+import "./index.css"
+import App from "./App"
+import reportWebVitals from "./reportWebVitals"
+import Plugin from "./components/Plugin"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootEle = document.getElementById("root")
+if (rootEle) {
+  ReactDOM.createRoot(rootEle).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  )
+}
 
-const plEle = document.getElementById('plugin');
-const key = plEle.getAttribute('ownerKey');
-if(plEle){
+const plEle = document.getElementById("plugin")
+const key = plEle.getAttribute("ownerKey")
+if (plEle) {
   ReactDOM.createRoot(plEle).render(
     <React.StrictMode>
-    <Plugin ownerKey={key}/>
-    </React.StrictMode>
+      <Plugin ownerKey={key} />
+    </React.StrictMode>,
   )
 }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()

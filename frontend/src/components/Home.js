@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import react from "react";
+import { Link } from "react-router-dom";
 
 import "./home.css";
 
@@ -36,15 +37,15 @@ const Home = () => {
                               <br />
                               <span className=""></span>
                             </h1>
-                            <a
+                            <Link
                               className="manualclass2 btn btn-outline-light btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 me-md-2"
-                              href="/signup"
+                              to="/signup"
                               role="button"
                               aria-controls="#picker-editor"
                               draggable="false"
                             >
                               Register with us
-                            </a>
+                            </Link>
                           
                             <a
                               className="btn btn-primary btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 text-white manualclass3"
