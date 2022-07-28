@@ -8,6 +8,7 @@ import Newslettercontent from "./components/Newslettercontent";
 import Login from "./components/Login";
 import Notfound from "./components/Notfound";
 import Authorisor from "./components/Auth";
+import Sendmail from "./components/Sendmail";
 
 function App() {
 
@@ -23,6 +24,13 @@ function App() {
           <Dashboard />
         </Authorisor>
        }path="/dashboard"/>
+
+
+          <Route element={
+        <Authorisor>
+          <Sendmail />
+        </Authorisor>
+       }path="/sendmail"/>
 
       
           <Route element={<Navigate to="/home" />} path="/" />

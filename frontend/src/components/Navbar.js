@@ -39,6 +39,11 @@ const Navbar = () => {
                 Dashboard
               </NavLink>
             </li>
+            <li class="nav-item">
+              <NavLink className="nav-link" to="/sendmail">
+                Send Email
+              </NavLink>
+            </li>
           </ul>
         </div>
 

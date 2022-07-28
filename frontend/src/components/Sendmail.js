@@ -87,47 +87,31 @@ const Dashboard = () => {
       <div className="container">
         <br />
 
-        <div className="backcolor1">
-          <Heading className="text-dark">Find your Subscribers!</Heading>
-          
-          <table className="table backcolor1 mt-5">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-              </tr>
-            </thead>
 
-            <tbody>{displaySubscriber()}</tbody>
-          </table>
+        <div className="backcolor1">
+          <Heading className="text-dark">
+            Send a Mail to your Subscribers
+          </Heading>
+          <div className="card mt-5 backcolor1">
+            <div className="card-body">
+              <input
+                placeholder="Enter mail title"
+                className="form-control"
+                onChange={(e) => setSubject(e.target.value)}
+              />
+              <textarea
+                className="form-control mt-4"
+                rows="10"
+                onChange={(e) => setLetterContent(e.target.value)}
+              ></textarea>
+              <button className="btn btn-primary mt-4" onClick={sendNewsLetter}>
+                Send
+              </button>
+            </div>
+          </div>
         </div>
 
         <br />
-
-        <div className="backcolor1">
-          <Heading className="text-center text-dark ">To Use Plugin Copy the Code Below : </Heading>
-          <Container className="mt-5">
-            <Input1
-              type="text"
-              className="m-4"
-              value={`<div id="plugin" ownerKey="${currentUser._id}"></div>`}
-              placeholder="Enter the text you want to copy"
-            />
-
-            <button style={{marginLeft: "22px"}} className="btn btn-primary" onClick={(e) =>
-                copyText(
-                  `<div id="plugin" ownerKey="${currentUser._id}"></div>`
-                )
-              }>
-                Copy to Clipboard
-              </button>
-              <br />
-              <br />
-          </Container>
-        </div>
-
-
-        {/* ends */}
         <br />
       </div>
     </div>

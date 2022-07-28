@@ -118,7 +118,7 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="card-body">
-                        <h3 className="fw-bold text-primary mb-3">Attachable%</h3>
+                        <h3 className="fw-bold text-primary mb-3">Attachable</h3>
                         <h5 className="text-muted mb-3">Plugins</h5>
                         <p className="text-muted">
                           Easily generate a plugin for any newsletter template to embbed in your website code.
