@@ -1,0 +1,9 @@
+.backcolor{
+    background-color: rgba(255, 246, 246, 0.959);
+}
+
+.backcolor1{
+    background-color: rgb(218, 206, 206);
+    border-radius: 10px;
+    box-shadow: 5px;
+}

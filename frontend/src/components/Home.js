@@ -47,15 +47,15 @@ const Home = () => {
                               Register with us
                             </Link>
                           
-                            <a
+                            <Link
                               className="btn btn-primary btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 text-white manualclass3"
-                              href="/login"
+                              to="/login"
                               role="button"
                               aria-controls="#picker-editor"
                               draggable="false"
                             >
                               login
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
