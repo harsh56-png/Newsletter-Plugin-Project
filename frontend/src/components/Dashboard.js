@@ -59,7 +59,9 @@ const Dashboard = () => {
     })
   }
 
-
+  const copyText = (text) => {
+    navigator.clipboard.writeText(text);
+  }
 
 
   return <div className='productlist bg-light'>
@@ -68,6 +70,9 @@ const Dashboard = () => {
       <br />
       <h4 className='text-center' >To Use Plugin Copy the Code Below : </h4>
 
+
+      <textarea value={`<div id="plugin" ownerKey="${currentUser._id}"></div>`} disabled className='form-control'></textarea>
+<button className='btn btn-primary' onClick={e => copyText(`<div id="plugin" ownerKey="${currentUser._id}"></div>`)}>Copy Plugin Code</button>
 
       <table className='table table-dark mt-5'>
         <thead>
