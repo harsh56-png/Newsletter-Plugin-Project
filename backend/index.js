@@ -20,6 +20,8 @@ app.use('/newsubscriber', subscriberRouter);
 app.use('/newslettercontent', newsletterRouter);
 app.use('/util', utilRouter);
 
+app.use(express.static('./resources'));
+
 const port = 5000;
 
 app.get('/', (req, res) => {

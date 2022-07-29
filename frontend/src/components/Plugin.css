@@ -1,0 +1,13 @@
+.custom1{
+    margin-top: -100px;
+    background: hsla(0, 0%, 100%, 0.7);
+    backdrop-filter: blur(30px);
+}
+
+.custom2{
+    background-image: url('https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDZ8fG1haWx8ZW58MHx8fHwxNjU5MTAyMDQ3&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080');
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
