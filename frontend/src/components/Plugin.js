@@ -1,7 +1,8 @@
 import { Formik } from "formik";
 import React from "react";
 import * as Yup from "yup";
-import "./Plugin.css";
+import './Plugin.css';  
+
 
 const Plugin = ({ ownerKey }) => {
   // console.log(ownerKey);
@@ -25,7 +26,7 @@ const Plugin = ({ ownerKey }) => {
 
   return (
     <div>
-      <h1 className="">Newsletter Plugin</h1>
+      <h1 className="">Newsletter Plugin here</h1>
 
       <div id="preview" class="preview">
         <div style={{ display: "none" }}></div>
