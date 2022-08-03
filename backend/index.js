@@ -13,7 +13,7 @@ const cors = require('cors');
 // this is a middleware function
 app.use(express.json());
 // allowing frontend to acces backend
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:5500'] }));
+app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:5500', 'http://127.0.0.1:5500'] }));
 
 app.use('/user', userRouter);
 app.use('/newsubscriber', subscriberRouter);

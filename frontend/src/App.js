@@ -9,14 +9,18 @@ import Login from "./components/Login";
 import Notfound from "./components/Notfound";
 import Authorisor from "./components/Auth";
 import Sendmail from "./components/Sendmail";
+import Newlogin from "./components/Newlogin";
+import Newregister from "./components/Newregister";
 
 function App() {
 
   return (
       <BrowserRouter>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <Routes>
           <Route element={<Home></Home>} path="home" />
+          <Route element={<Newlogin></Newlogin>} path="newlogin" />
+          <Route element={<Newregister></Newregister>} path="newregister" />
           <Route element={<Signup></Signup>} path="signup" />
           <Route element={<Login></Login>} path="login" />
           <Route element={
