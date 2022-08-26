@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Notfound from "./components/Notfound";
 import Authorisor from "./components/Auth";
 import Sendmail from "./components/Sendmail";
+import Plugin from "./components/Plugin";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       
           <Route element={<Navigate to="/home" />} path="/" />
           <Route element={<Newslettercontent></Newslettercontent>} path="newslettercontent" />
+          <Route element={<Plugin></Plugin>} path="plugin" />
           <Route element={<Notfound></Notfound>} path="*" />
         </Routes>
       </BrowserRouter>

@@ -144,7 +144,7 @@ const Plugin = ({ ownerKey }) => {
                                       class="btn btn-primary btn-lg ms-md-2"
                                       aria-controls="#picker-editor"
                                     >
-                                      Subscribe
+                                      Subscribe Us
                                     </button>
                                   </div>
                                   </form>

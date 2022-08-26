@@ -123,6 +123,12 @@ const Dashboard = () => {
               </button>
               <br />
               <br />
+              <button style={{marginLeft: "22px"}} className="btn btn-primary" onClick={(e) =>
+               window.location.href='https://drive.google.com/file/d/1YMfaTmXStwMuheBmfAQeQDKspMC8080w/view?usp=sharing'
+              } >Download Files</button>
+              <br />
+              <br />
+              
           </Container>
         </div>
 
